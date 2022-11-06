@@ -1,4 +1,4 @@
-let producto = parseInt(
+let productoElegido = parseInt(
   prompt(
     "Escoge el producto que deseas comprar: 1.camiseta - 2.short - 3.pantalon - 4.buzo"
   )
@@ -26,14 +26,21 @@ productosArray.push(pantalon);
 const buzo = new NewProduct(4, "buzo", 5700, 32);
 productosArray.push(buzo);
 
-console.log(productosArray)
+// console.log(productosArray)
+/* Arreglo */
+const carrito = []
+
 /* Ciclos */
 while (seguirComprando === true) {
-  totalCompra = totalCompra + productosArray[producto - 1].price
+  const producto = productosArray.find(prod => prod.id === productoElegido)
+  if (producto) {
+    carrito.push(producto)
+  }
 
+  // console.log(producto)
   decision = parseInt(prompt("Queres añadir algo mas a tu carrito? 1.Si - 2.No"));
   if (decision === 1) {
-    producto = parseInt(
+    productoElegido = parseInt(
       prompt(
         "Escoge el producto que deseas Agregar: 1.camiseta - 2.short - 3.pantalon - 4.buzo"
       )
@@ -43,6 +50,9 @@ while (seguirComprando === true) {
   }
 }
 
+totalCompra = carrito.map(producto => producto.price).reduce((a, b) => a + b)
+console.log(carrito)
+console.log(totalCompra)
 const totalCompraConDescuento = descuento(totalCompra);
 alert(`El total de tu carrito es ${totalCompraConDescuento}`);
 
