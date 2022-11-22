@@ -1,3 +1,13 @@
 header {
   background-color: #1da1dd;
 }
+.productos {
+  margin: 4rem;
+}
+.carrito {
+  margin: 3rem;
+  padding: 4rem;
+}
+.botones {
+  margin: 3rem;
+}
