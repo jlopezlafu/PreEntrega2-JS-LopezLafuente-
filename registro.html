@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="js/script.js" />
+      <link rel="stylesheet" href="js/productos.js" />
+      <link rel="stylesheet" href="js/registro.js" />
+      <script
+        src="https://kit.fontawesome.com/75e53ee709.js"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="icon" href="img/escudotemp.png" />
+      <title>Registro</title>
+      <!-- bootstrap -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body class="fondos">
+      <main>
+        <div class="pantallaLogueo">
+          <section class="registroUsuarios" id="registrarse">
+            <div class="remember"><input type="hidden" value="Ingresar" /></div>
+            <div class="forget">
+              <label for="forgetname"></label>
+              <input id="forgetname" type="hidden" value="Cambiar usuario" />
+            </div>
+            <div class="form_container account_container">
+              <img src="./img/pertenencia.jpg" alt="hinchada" />
+              <form
+                action="#"
+                class="login_form"
+                id="CreateAccount"
+                class="remember"
+              >
+                <div class="inputs_container">
+                  <h2>Crear una cuenta</h2>
+                  <div class="input-field">
+                    <label
+                      for="name"
+                      class="user etiquetaUsuario"
+                      id="firstName"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      id="FirstName"
+                      class="user inputUsuario"
+                      required
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="name" class="user etiquetaUsuario" id="lastName"
+                      >Apellido</label
+                    >
+                    <input
+                      type="text"
+                      id="LastName"
+                      class="user inputUsuario"
+                      required
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="name" class="user etiquetaUsuario" id="email"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="UserEmail"
+                      class="user inputUsuario"
+                      required
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="password" class="user etiquetaUsuario"
+                      >Contraseña</label
+                    >
+                    <input
+                      type="password"
+                      id="UserPassword-1"
+                      class="user inputUsuario"
+                      required
+                    />
+                  </div>
+                </div>
+                <input id="submitname" type="submit" value="REGISTRAR CUENTA" />
+                <button id="botonRegistro">
+                  <a href="index.html">VOLVER</a>
+                </button>
+                <br />
+              </form>
+            </div>
+            <section>
+              <table class="users_table tablaRegistros">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Contraseña</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="user-list"></tbody>
+              </table>
+            </section>
+          </section>
+        </div>
+      </main>
+      <script src="js/registro.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
+    </body>
+  </html>
+</html>

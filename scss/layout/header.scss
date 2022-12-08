@@ -1,0 +1,50 @@
+header {
+  background-color: #1da1dd;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+.cabecera {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #1746a2 1%, #1da1dd 100%);
+}
+
+.remember {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  .botonIngresar {
+    padding: 0.2rem;
+    margin: 0.5rem;
+    background-color: white;
+    color: #000000;
+    border-radius: 10%;
+    display: flex;
+    float: right;
+    a {
+      text-decoration: none;
+    }
+  }
+  .forget {
+    padding: 0.2rem;
+    margin: 0.5rem;
+    background-color: white;
+    color: #000000;
+    border-radius: 10%;
+    display: flex;
+    float: right;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="e">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/script.js" />
+    <link rel="stylesheet" href="js/productos.js" />
+    <link rel="stylesheet" href="js/registro.js" />
+    <script
+      src="https://kit.fontawesome.com/75e53ee709.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/escudotemp.png" />
+    <title>Ingreso</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="cuerpoingreso">
+        <div class="cuerpoingreso__izquierda">
+          <center><img src="./img/escudotemp.png" alt="Temperley" /></center>
+          <h1>Bienvenidos</h1>
+          <h3>Iniciar Sesión</h3>
+          <form id="formularioLogin" action="action_page.php" method="post">
+            <label for="uname"><b>Correo electrónico</b></label>
+            <input
+              type="text"
+              placeholder="Ingresar usuario"
+              name="uname"
+              required
+            />
+            <label for="psw"><b>Contraseña</b></label>
+            <input
+              type="password"
+              placeholder="Ingresar contraseña"
+              name="psw"
+              required
+            />
+            <button id="botonLogin" type="submit">Login</button>
+            <input
+              class="checkbox"
+              type="checkbox"
+              checked="checked"
+              name="remember"
+            />
+            <label></label>Recordarme
+            <a href="./registro.html" role="button" id="botonRegistro"
+              >Registrarme</a
+            >
+            <span id="olvidasteContraseña"
+              ><a href="#">¿Olvidaste tu contraseña?</a></span
+            >
+          </form>
+        </div>
+        <img id="copa" src="./img/hinchada.jpg" alt="foto copa" />
+      </div>
+    </section>
+  </body>
+</html>
