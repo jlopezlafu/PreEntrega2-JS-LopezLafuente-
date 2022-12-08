@@ -1,5 +1,5 @@
 header {
-  background-color: #1da1dd;
+  background-color: $color-principal;
   text-align: center;
   width: 100%;
   height: auto;
@@ -13,9 +13,13 @@ header {
   width: 100%;
   height: 100%;
   padding: 50px;
-  color: #fff;
+  color: white;
   text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient(135deg, #1746a2 1%, #1da1dd 100%);
+  background-image: linear-gradient(
+    135deg,
+    $color-header 1%,
+    $color-principal 100%
+  );
 }
 
 .remember {

@@ -19,7 +19,7 @@
 
 #botonRegistro {
   text-align: center;
-  background-color: #1c6dd0;
+  background-color: $color-botones;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -58,18 +58,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .cuerpoingreso__izquierda {
   display: flex;
   flex-direction: column;
   padding: 15px 100px;
+  text-decoration: none;
   img {
     width: 40%;
     margin: 0;
   }
   h1 {
-    color: #1c6dd0;
+    color: $color-botones;
     font-size: 70px;
     margin: 10px 0;
     padding: 10px 0;
@@ -79,16 +81,18 @@
     align-items: center;
   }
   h3 {
-    color: #1c6dd0;
+    color: $color-botones;
     font-size: 30px;
     margin: 10px 0;
     padding: 10px 0;
+    text-decoration: none;
   }
   form {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
     padding: 10px 100px 0 0;
+    text-decoration: none;
   }
   form input {
     padding: 20px;
@@ -97,11 +101,12 @@
     border: black solid 1px;
     font-size: 20px;
     width: 500px;
+    text-decoration: none;
   }
 }
 
 .fondos {
-  background-color: #96d5ee;
+  background-color: $color-ingreso;
 
   .account_container {
     display: flex;
